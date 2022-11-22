@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const initialState = [];
@@ -16,7 +17,9 @@ const machinesSlice = createSlice({
   initialState,
   extraReducers: (builder) => {
     builder.addCase(getMachines.fulfilled, (state, action) => {
-      console.log(action.payload);
+      const { num_lmxes } = action.payload;
+      const machineCount = num_lmxes.toLocaleString();
+      return machineCount;
     });
   },
 });
