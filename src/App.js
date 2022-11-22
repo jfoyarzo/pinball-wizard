@@ -1,12 +1,18 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Button } from 'react-bootstrap';
+import MainNav from './Components/Navbar';
+import Home from './views/Home';
+import UnderConstruction from './views/Under_Construction';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Main APP</h1>
-      <Button className="ms-4" variant="warning">Button</Button>
-    </div>
+    <Router>
+      <MainNav />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="*" element={<UnderConstruction />} />
+      </Routes>
+    </Router>
   );
 }
 
