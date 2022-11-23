@@ -10,12 +10,12 @@ const Details = (props) => {
   const { city, machines } = props;
   const dispatch = useDispatch();
   const top = useSelector((state) => state.topCities);
+  const currentCity = top.find((element) => element.city === city);
+  const { locations } = currentCity;
 
   useEffect(() => {
-    const currentCity = top.find((element) => element.city === city);
-    if (!currentCity.locations) {
+    if (!locations) {
       dispatch(getDetails(city));
-      console.log(city)
     }
   }, [city]);
 
@@ -38,6 +38,14 @@ const Details = (props) => {
       <Container className="border border-primary">
         <p>Top Locations</p>
       </Container>
+      {locations && locations.map((location) => (
+        <p key={location.name}>
+          {location.name}
+          {' '}
+          {location.machineCount}
+        </p>
+      ))}
+      <Container />
     </div>
   );
 };
