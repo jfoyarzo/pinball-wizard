@@ -14,7 +14,7 @@ export const getCities = createAsyncThunk(
 export const getDetails = createAsyncThunk(
   'topCities/getDetails',
   async (city) => {
-    const response = await fetch(`https://pinballmap.com/api/v1/locations.json?by_city_id=${city}&by_at_least_n_machines_type=10`);
+    const response = await fetch(`https://pinballmap.com/api/v1/locations.json?by_city_id=${city}&by_at_least_n_machines_type=5`);
     const resJson = await response.json();
     return resJson;
   },
@@ -41,9 +41,10 @@ const topCitiesSlice = createSlice({
           machineCount: location.num_machines,
         }));
         const { city } = localDetails[0];
+        const sortedDetails = localDetails.sort((a, b) => b.machineCount - a.machineCount);
         return state.map((element) => {
           if (element.city === city) {
-            return { ...element, locations: localDetails };
+            return { ...element, locations: sortedDetails };
           }
           return element;
         });
