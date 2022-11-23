@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { React, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, Container } from 'react-bootstrap';
@@ -6,11 +7,16 @@ import { getMachines } from '../redux/machines/machinesSlice';
 import usa from '../img/usa_map.png';
 import pinballIcon from '../img/pinball_icon.png';
 
+let firstRender = true;
+
 const Home = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMachines());
-  }, [dispatch]);
+    if (firstRender) {
+      dispatch(getMachines());
+      firstRender = false;
+    }
+  }, []);
 
   const totalMachines = useSelector((state) => state.totalMachines);
   const top = useSelector((state) => state.topCities);
