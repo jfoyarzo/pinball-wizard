@@ -11,17 +11,43 @@ export const getCities = createAsyncThunk(
   },
 );
 
+export const getDetails = createAsyncThunk(
+  'topCities/getDetails',
+  async (city) => {
+    const response = await fetch(`https://pinballmap.com/api/v1/locations.json?by_city_id=${city}&by_at_least_n_machines_type=10`);
+    const resJson = await response.json();
+    return resJson;
+  },
+);
+
 const topCitiesSlice = createSlice({
   name: 'topCities',
   initialState,
   extraReducers: (builder) => {
-    builder.addCase(getCities.fulfilled, (state, action) => {
-      const topList = action.payload;
-      return topList.map((region) => ({
-        city: region.city,
-        machineCount: region.machine_count,
-      }));
-    });
+    builder
+      .addCase(getCities.fulfilled, (state, action) => {
+        const topList = action.payload;
+        return topList.map((region) => ({
+          city: region.city,
+          machineCount: region.machine_count,
+        }));
+      })
+      .addCase(getDetails.fulfilled, (state, action) => {
+        const { locations } = action.payload;
+        const localDetails = locations.map((location) => ({
+          name: location.name,
+          address: location.street,
+          city: location.city,
+          machineCount: location.num_machines,
+        }));
+        const { city } = localDetails[0];
+        return state.map((element) => {
+          if (element.city === city) {
+            return { ...element, locations: localDetails };
+          }
+          return element;
+        });
+      });
   },
 });
 
