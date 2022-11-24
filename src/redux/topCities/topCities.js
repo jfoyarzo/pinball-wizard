@@ -35,6 +35,7 @@ const topCitiesSlice = createSlice({
       .addCase(getDetails.fulfilled, (state, action) => {
         const { locations } = action.payload;
         const localDetails = locations.map((location) => ({
+          id: location.id,
           name: location.name,
           address: location.street,
           city: location.city,
