@@ -1,3 +1,16 @@
+body {
+  color: whitesmoke;
+  background-color: #4369b0;
+}
+
 h1 {
-  color: brown;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
