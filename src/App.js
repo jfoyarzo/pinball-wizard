@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import './App.css';
 import MainNav from './Components/Navbar';
 import Home from './views/Home';
-import UnderConstruction from './views/Under_Construction';
+import Details from './views/Details';
 import { getCities } from './redux/topCities/topCities';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <MainNav />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        {top.map((region) => <Route path={`/${region.city}`} element={<UnderConstruction />} key={region.city} />)}
+        {top.map((region) => <Route path={`/${region.city.split(' ').join('')}`} element={<Details city={region.city} machines={region.machineCount} />} key={region.city} />)}
       </Routes>
     </Router>
   );

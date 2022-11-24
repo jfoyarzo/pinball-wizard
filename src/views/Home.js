@@ -51,7 +51,7 @@ const Home = () => {
                 backgroundImage: `url(${pinballIcon})`, backgroundSize: '13vh', backgroundRepeat: 'no-repeat', backgroundPosition: 'top', backgroundColor: 'blue', backgroundBlendMode: 'multiply',
               }}
             >
-              <Link to={`/${region.city}`}>
+              <Link to={`/${region.city.split(' ').join('')}`}>
                 <div className="d-flex flex-column justify-content-end" style={{ height: '15vh' }}>
                   <h3>{region.city}</h3>
                   <p>
