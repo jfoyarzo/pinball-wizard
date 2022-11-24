@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Col, Container, Row } from 'react-bootstrap';
 import { getDetails } from '../redux/topCities/topCities';
+import Location from '../Components/Location';
 import details from '../img/details_img.png';
 
 const Details = (props) => {
@@ -39,11 +40,7 @@ const Details = (props) => {
         <p>Top Locations</p>
       </Container>
       {locations && locations.map((location) => (
-        <p key={location.name}>
-          {location.name}
-          {' '}
-          {location.machineCount}
-        </p>
+        <Location key={location.id} name={location.name} machineCount={location.machineCount} />
       ))}
       <Container />
     </div>
