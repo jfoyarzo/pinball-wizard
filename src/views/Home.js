@@ -23,22 +23,24 @@ const Home = () => {
 
   return (
     <div className="home-wrapper">
-      <Row xs="2" style={{ height: '25vh', padding: '1em', backgroundColor: 'blue' }}>
-        <Col style={{
-          backgroundImage: `url(${usa})`, backgroundColor: 'blue', backgroundBlendMode: 'multiply', backgroundSize: '20vh', backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
-        }}
+      <Row style={{ height: '20vh', padding: '1em', backgroundColor: '#5889e4' }}>
+        <Col
+          xs="7"
+          style={{
+            backgroundImage: `url(${usa})`, backgroundColor: '#5889e4', backgroundBlendMode: 'multiply', backgroundSize: '25vh', backgroundRepeat: 'no-repeat', backgroundPosition: '40px center',
+          }}
         />
-        <Col>
-          <h2>USA</h2>
+        <Col className="d-flex flex-column justify-content-center ps-4">
+          <h1 className="mb-0">USA</h1>
           <p>
-            Machine count:
-            {' '}
             {totalMachines}
+            {' '}
+            Machines
           </p>
         </Col>
       </Row>
-      <Container className="border border-primary">
-        <p>Top Cities</p>
+      <Container style={{ backgroundColor: '#35548b' }}>
+        <p className="fw-bold" style={{ fontSize: '1em' }}>MACHINES BY CITY</p>
       </Container>
       <div className="top-container">
         <Row>
