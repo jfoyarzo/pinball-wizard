@@ -14,7 +14,7 @@ export const getCities = createAsyncThunk(
 export const getDetails = createAsyncThunk(
   'topCities/getDetails',
   async (city) => {
-    const response = await fetch(`https://pinballmap.com/api/v1/locations.json?by_city_id=${city}&by_at_least_n_machines_type=5`);
+    const response = await fetch(`https://pinballmap.com/api/v1/locations.json?by_city_id=${city}`);
     const resJson = await response.json();
     return resJson;
   },
