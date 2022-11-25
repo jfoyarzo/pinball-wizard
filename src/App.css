@@ -1,3 +1,32 @@
+body {
+  color: whitesmoke;
+  background-color: #4369b0;
+}
+
 h1 {
-  color: brown;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.city-col {
+  background: #4369b0 no-repeat top;
+}
+
+.city-col:nth-child(2),
+.city-col:nth-child(3),
+.city-col:nth-child(6),
+.city-col:nth-child(7),
+.city-col:nth-child(10) {
+  background-color: #3f63a4;
+}
+
+.location:nth-child(2n+1) {
+  background-color: #4e7aca;
 }

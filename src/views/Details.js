@@ -22,22 +22,22 @@ const Details = (props) => {
 
   return (
     <div className="details-wrapper">
-      <Row xs="2" style={{ height: '25vh', padding: '1em', backgroundColor: 'blue' }}>
+      <Row xs="2" style={{ height: '22vh', padding: '1em', backgroundColor: '#5889e4' }}>
         <Col style={{
-          backgroundImage: `url(${details})`, backgroundColor: 'blue', backgroundBlendMode: 'multiply', backgroundSize: '20vh', backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
+          backgroundImage: `url(${details})`, backgroundColor: '#5889e4', backgroundBlendMode: 'multiply', backgroundSize: '17vh', backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
         }}
         />
-        <Col>
-          <h2>{city}</h2>
+        <Col className="d-flex flex-column justify-content-center align-items-end">
+          <h2 className="fw-bold mb-0">{city.toUpperCase()}</h2>
           <p>
-            Machine count:
-            {' '}
             {machines}
+            {' '}
+            machines
           </p>
         </Col>
       </Row>
-      <Container className="border border-primary">
-        <p>Top Locations</p>
+      <Container className="py-1">
+        <p className="fw-bold">CITY LOCATION BREAKDOWN</p>
       </Container>
       {locations && locations.map((location) => (
         <Location key={location.id} name={location.name} machineCount={location.machineCount} />
