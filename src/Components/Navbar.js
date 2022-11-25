@@ -25,9 +25,9 @@ const MainNav = () => {
 
   useEffect(() => {
     if (location.pathname === '/') {
-      setTitle('most machines');
+      setTitle('most pinball machines');
     } else {
-      setTitle('City view');
+      setTitle('city view');
     }
   }, [location, setTitle]);
 
