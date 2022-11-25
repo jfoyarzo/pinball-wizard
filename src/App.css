@@ -26,3 +26,7 @@ a:active {
 .city-col:nth-child(10) {
   background-color: #3f63a4;
 }
+
+.location:nth-child(2n+1) {
+  background-color: #4e7aca;
+}

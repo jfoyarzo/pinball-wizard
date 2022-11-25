@@ -36,7 +36,7 @@ const Details = (props) => {
           </p>
         </Col>
       </Row>
-      <Container className="border border-primary">
+      <Container className="py-1">
         <p className="fw-bold">CITY LOCATION BREAKDOWN</p>
       </Container>
       {locations && locations.map((location) => (
