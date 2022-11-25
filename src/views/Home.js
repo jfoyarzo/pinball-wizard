@@ -59,7 +59,7 @@ const Home = () => {
                 <IconContext.Provider value={{ size: '1.3em' }}>
                   <div className="d-flex flex-column justify-content-end align-items-end" style={{ height: '15vh' }}>
                     <BsArrowRightCircle className="mb-auto" />
-                    <h3 className="mb-0">{region.city}</h3>
+                    <h3 className="mb-0 fw-bold">{region.city.toUpperCase()}</h3>
                     <p>
                       {region.machineCount}
                     </p>
