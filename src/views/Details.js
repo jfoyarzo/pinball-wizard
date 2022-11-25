@@ -22,7 +22,7 @@ const Details = (props) => {
 
   return (
     <div className="details-wrapper">
-      <Row xs="2" style={{ height: '25vh', padding: '1em', backgroundColor: '#5889e4' }}>
+      <Row xs="2" style={{ height: '22vh', padding: '1em', backgroundColor: '#5889e4' }}>
         <Col style={{
           backgroundImage: `url(${details})`, backgroundColor: '#5889e4', backgroundBlendMode: 'multiply', backgroundSize: '17vh', backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
         }}
