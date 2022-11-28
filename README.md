@@ -1,192 +1,70 @@
-<a name="readme-top"></a>
+# Getting Started with Create React App
 
-<div align="center">
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-</div>
+## Available Scripts
 
-<!-- TABLE OF CONTENTS -->
+In the project directory, you can run:
 
-# 📗 Table of Contents
+### `npm start`
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 Pinball Wizard 🧙‍♂️ ](#-pinball-wizard-️-)
-  - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
-  - [👥 Authors ](#-authors-)
-  - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [📝 License ](#-license-)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-<!-- PROJECT DESCRIPTION -->
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-# 📖 Pinball Wizard 🧙‍♂️ <a name="about-project"></a>
+### `npm test`
 
-**Pinball Wizard** is a mobile web app that uses the data from the [Pinball Map Api](https://pinballmap.com/api/v1/docs) to display the total count of pinball machines in USA and breaks down the top 10 cities by location and number of machines.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 🛠 Built With <a name="built-with"></a>
+### `npm run build`
 
-### Tech Stack <a name="tech-stack"></a>
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-    <li><a href="https://react-bootstrap.github.io/">React-Bootstrap</a></li>
-  </ul>
-</details>
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<details>
-  <summary>State Management</summary>
-  <ul>
-    <li><a href="https://redux-toolkit.js.org/">Redux Toolkit</a></li>
-  </ul>
-</details>
+### `npm run eject`
 
-<details>
-  <summary>API</summary>
-  <ul>
-    <li><a href="https://pinballmap.com/api/v1/docs">Pinball Map API</a></li>
-  </ul>
-</details>
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-<!-- Features -->
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Key Features <a name="key-features"></a>
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- **All the machines:** Displays the total count of pinball machines in USA
-- **Top cities:** Displays a list of the 10 cities with most number of machines
-- **Location breakdown:** Displays a list of location for a given city and the number of machines present
+## Learn More
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-<!-- LIVE DEMO -->
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## 🚀 Live Demo <a name="live-demo"></a>
+### Code Splitting
 
-- [Live Demo Link](https://pinball-wizard.netlify.app/)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Analyzing the Bundle Size
 
-<!-- GETTING STARTED -->
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## 💻 Getting Started <a name="getting-started"></a>
+### Making a Progressive Web App
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-To get a local copy up and running, follow these steps.
+### Advanced Configuration
 
-### Prerequisites
-
-In order to run this project you need:
-
-- Node.js
-- Npm
-- Git
-
-### Setup
-
-Clone this repository to your desired folder:
-
-- `git clone git@github.com:jfoyarzo/pinball-wizard.git`
-
-
-### Install
-
-Install this project's dependencies with:
-
-- `npm install`
-
-### Usage
-
-To run the project, execute the following command:
-
-Run `npm start` on the app folder to serve files for access on http://localhost:3000/
-
-### Run tests
-
-To run tests, run the following command:
-
-- `npm test`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-You can deploy this project using:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-- `npm run build`
+### `npm run build` fails to minify
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
-
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
-
-👤 **Felipe Oyarzo**
-
-- GitHub: [@jfoyarzo](https://github.com/jfoyarzo)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorge-felipe-oyarzo-contreras-647118247/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Tablet and Desktop Version**
-- [ ] **Location details view with information about each location**
-- [ ] **Spinner while fetching the data**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/jfoyarzo/pinball-wizard/issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
-
-
-If you like this project please give it a ⭐!
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-Original UI design by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
