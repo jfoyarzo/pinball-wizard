@@ -1,4 +1,7 @@
 <a name="readme-top"></a>
+<div align="center">
+<img src="https://user-images.githubusercontent.com/101157253/232583939-f34ea515-4a96-40fd-b123-58a6fc9c9240.png" style="height: auto; width: 900px;"/>
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
